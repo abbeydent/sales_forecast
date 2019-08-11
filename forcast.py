@@ -10,3 +10,11 @@ data = pd.read_csv('SoEagle_data.csv')
 #print(data)
 print(data.head())
 print(data.dtypes)
+
+
+
+df = data
+print(df.head())
+df['Week'] = pd.to_datetime(df['Week'])
+print(df.head())
+print(df.dtypes)
